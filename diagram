@@ -1,0 +1,62 @@
+// Interactive Data Models
+digraph {
+	graph [bgcolor="#EEEEEE" rankdir=TB splines=spline]
+	node [fontname=Roboto fontsize=12 shape=none]
+	edge [fontname=Roboto fontsize=10]
+	Station [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD COLSPAN="2" BGCOLOR="#3F51B5"><FONT COLOR="white">Station</FONT></TD></TR>
+        <TR>
+                         <TD BGCOLOR="#BBDEFB">stationid</TD>
+                         <TD BGCOLOR="#BBDEFB">INTEGER (PK)</TD>
+                         </TR><TR>
+                         <TD BGCOLOR="#BBDEFB">stationname</TD>
+                         <TD BGCOLOR="#BBDEFB">VARCHAR ()</TD>
+                         </TR><TR>
+                         <TD BGCOLOR="#BBDEFB">lat</TD>
+                         <TD BGCOLOR="#BBDEFB">FLOAT ()</TD>
+                         </TR><TR>
+                         <TD BGCOLOR="#BBDEFB">lon</TD>
+                         <TD BGCOLOR="#BBDEFB">FLOAT ()</TD>
+                         </TR><TR>
+                         <TD BGCOLOR="#BBDEFB">regio</TD>
+                         <TD BGCOLOR="#BBDEFB">VARCHAR ()</TD>
+                         </TR></TABLE>> URL="http://Station_details.html"]
+	StationMeasurements [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD COLSPAN="2" BGCOLOR="#3F51B5"><FONT COLOR="white">StationMeasurements</FONT></TD></TR>
+        <TR>
+                         <TD BGCOLOR="#BBDEFB">measurementid</TD>
+                         <TD BGCOLOR="#BBDEFB">INTEGER (PK)</TD>
+                         </TR><TR>
+                         <TD BGCOLOR="#BBDEFB">timestamp</TD>
+                         <TD BGCOLOR="#BBDEFB">DATETIME ()</TD>
+                         </TR><TR>
+                         <TD BGCOLOR="#BBDEFB">temperature</TD>
+                         <TD BGCOLOR="#BBDEFB">FLOAT ()</TD>
+                         </TR><TR>
+                         <TD BGCOLOR="#BBDEFB">groundtemperature</TD>
+                         <TD BGCOLOR="#BBDEFB">FLOAT ()</TD>
+                         </TR><TR>
+                         <TD BGCOLOR="#BBDEFB">feeltemperature</TD>
+                         <TD BGCOLOR="#BBDEFB">FLOAT ()</TD>
+                         </TR><TR>
+                         <TD BGCOLOR="#BBDEFB">windgusts</TD>
+                         <TD BGCOLOR="#BBDEFB">FLOAT ()</TD>
+                         </TR><TR>
+                         <TD BGCOLOR="#BBDEFB">windspeedBft</TD>
+                         <TD BGCOLOR="#BBDEFB">INTEGER ()</TD>
+                         </TR><TR>
+                         <TD BGCOLOR="#BBDEFB">humidity</TD>
+                         <TD BGCOLOR="#BBDEFB">INTEGER ()</TD>
+                         </TR><TR>
+                         <TD BGCOLOR="#BBDEFB">precipitation</TD>
+                         <TD BGCOLOR="#BBDEFB">FLOAT ()</TD>
+                         </TR><TR>
+                         <TD BGCOLOR="#BBDEFB">sunpower</TD>
+                         <TD BGCOLOR="#BBDEFB">INTEGER ()</TD>
+                         </TR><TR>
+                         <TD BGCOLOR="#BBDEFB">stationid</TD>
+                         <TD BGCOLOR="#BBDEFB">INTEGER ()</TD>
+                         </TR></TABLE>> URL="http://StationMeasurements_details.html"]
+}
